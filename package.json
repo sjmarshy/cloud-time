@@ -1,0 +1,23 @@
+{
+  "name": "cloud-time",
+  "version": "1.0.0",
+  "description": "TagTime server",
+  "main": "dist/index.js",
+  "scripts": {
+    "commitmsg": "validate-commit-msg",
+    "test": "ava",
+    "start": "node dist"
+  },
+  "keywords": [
+    "tagtime",
+    "quantified-self"
+  ],
+  "author": "Sam Marshall <sjmarshy@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "husky": "^0.13.3",
+    "validate-commit-msg": "^2.12.1"
+  }
+}
