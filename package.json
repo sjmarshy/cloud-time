@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "commitmsg": "validate-commit-msg",
+    "build": "babel -q src --out-dir dist",
     "test": "ava",
     "start": "node dist"
   },
