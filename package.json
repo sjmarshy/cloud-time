@@ -9,7 +9,7 @@
     "scripts": {
         "commitmsg": "validate-commit-msg",
         "build": "babel -q src --out-dir dist",
-        "test": "ava",
+        "test": "ava src/**/*test.js",
         "start": "node dist"
     },
     "keywords": [
@@ -33,8 +33,15 @@
             "git add"
         ]
     },
+    "ava": {
+        "require": [
+            "babel-register"
+        ],
+        "babel": "inherit"
+    },
     "devDependencies": {
         "@scottnonnenberg/eslint-config-thehelp": "^0.8.0",
+        "ava": "^0.19.1",
         "babel-cli": "^6.24.1",
         "babel-preset-env": "^1.4.0",
         "cz-conventional-changelog": "^2.0.0",
@@ -42,9 +49,11 @@
         "husky": "^0.13.3",
         "lint-staged": "^3.4.1",
         "prettier": "^1.2.2",
+        "testdouble": "^2.1.2",
         "validate-commit-msg": "^2.12.1"
     },
     "dependencies": {
+        "dirty": "^1.1.0",
         "express": "^4.15.2"
     }
 }

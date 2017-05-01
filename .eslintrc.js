@@ -1,5 +1,6 @@
 module.exports = {
-  extends: [
-    '@scottnonnenberg/thehelp',
-  ],
+  extends: ['@scottnonnenberg/thehelp'],
+  rules: {
+    'func-style': 0,
+  },
 };
