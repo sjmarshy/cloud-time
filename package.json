@@ -1,6 +1,9 @@
 {
   "name": "cloud-time",
   "version": "1.0.0",
+  "engines": {
+      "node": "7.x.x"
+  },
   "description": "TagTime server",
   "main": "dist/index.js",
   "scripts": {
@@ -28,7 +31,10 @@
     }
   },
   "repository": {
-      "type": "git",
-      "url": "git@github.com:sjmarshy/cloud-time.git"
+    "type": "git",
+    "url": "git@github.com:sjmarshy/cloud-time.git"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
   }
 }
