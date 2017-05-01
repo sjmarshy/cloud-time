@@ -1,40 +1,49 @@
 {
-  "name": "cloud-time",
-  "version": "1.0.0",
-  "engines": {
-      "node": "7.x.x"
-  },
-  "description": "TagTime server",
-  "main": "dist/index.js",
-  "scripts": {
-    "commitmsg": "validate-commit-msg",
-    "build": "babel -q src --out-dir dist",
-    "test": "ava",
-    "start": "node dist"
-  },
-  "keywords": [
-    "tagtime",
-    "quantified-self"
-  ],
-  "author": "Sam Marshall <sjmarshy@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.4.0",
-    "cz-conventional-changelog": "^2.0.0",
-    "husky": "^0.13.3",
-    "validate-commit-msg": "^2.12.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+    "name": "cloud-time",
+    "version": "1.0.0",
+    "engines": {
+        "node": "7.x.x"
+    },
+    "description": "TagTime server",
+    "main": "dist/index.js",
+    "scripts": {
+        "commitmsg": "validate-commit-msg",
+        "build": "babel -q src --out-dir dist",
+        "test": "ava",
+        "start": "node dist"
+    },
+    "keywords": [
+        "tagtime",
+        "quantified-self"
+    ],
+    "author": "Sam Marshall <sjmarshy@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@scottnonnenberg/eslint-config-thehelp": "^0.8.0",
+        "babel-cli": "^6.24.1",
+        "babel-preset-env": "^1.4.0",
+        "cz-conventional-changelog": "^2.0.0",
+        "eslint": "^3.19.0",
+        "husky": "^0.13.3",
+        "prettier": "^1.2.2",
+        "validate-commit-msg": "^2.12.1"
+    },
+    "dependencies": {
+        "express": "^4.15.2"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:sjmarshy/cloud-time.git"
+    },
+    "lint-staged": {
+        "*.js": [
+            "prettier --single-quote --trailing-comma all --tab-width 4 --write",
+            "git add"
+        ]
     }
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:sjmarshy/cloud-time.git"
-  },
-  "dependencies": {
-    "express": "^4.15.2"
-  }
 }
