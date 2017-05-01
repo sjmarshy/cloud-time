@@ -1,1 +1,12 @@
-{ "maxSubjectLength": 72 }
+{
+    "maxSubjectLength": 72,
+    "scope": {
+        "required": false,
+        "allowed": [
+            "server",
+            "deps",
+            "babel",
+            "package"
+        ]
+    }
+}
