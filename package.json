@@ -18,20 +18,6 @@
     ],
     "author": "Sam Marshall <sjmarshy@gmail.com>",
     "license": "MIT",
-    "devDependencies": {
-        "@scottnonnenberg/eslint-config-thehelp": "^0.8.0",
-        "babel-cli": "^6.24.1",
-        "babel-preset-env": "^1.4.0",
-        "cz-conventional-changelog": "^2.0.0",
-        "eslint": "^3.19.0",
-        "husky": "^0.13.3",
-        "lint-staged": "^3.4.1",
-        "prettier": "^1.2.2",
-        "validate-commit-msg": "^2.12.1"
-    },
-    "dependencies": {
-        "express": "^4.15.2"
-    },
     "config": {
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog"
@@ -46,5 +32,19 @@
             "prettier --single-quote --trailing-comma all --tab-width 4 --write",
             "git add"
         ]
+    },
+    "devDependencies": {
+        "@scottnonnenberg/eslint-config-thehelp": "^0.8.0",
+        "babel-cli": "^6.24.1",
+        "babel-preset-env": "^1.4.0",
+        "cz-conventional-changelog": "^2.0.0",
+        "eslint": "^3.19.0",
+        "husky": "^0.13.3",
+        "lint-staged": "^3.4.1",
+        "prettier": "^1.2.2",
+        "validate-commit-msg": "^2.12.1"
+    },
+    "dependencies": {
+        "express": "^4.15.2"
     }
 }
